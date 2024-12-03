@@ -27,4 +27,4 @@ function test01_2() {
 
 test01_1();
 test01_2();
-console.log("All tests passed!")
+console.log("Day 1 tests passed!")

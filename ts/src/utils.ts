@@ -9,3 +9,6 @@ export function loadInput(day: number): string {
   return fs.readFileSync(filePath, 'utf-8');
 }
 
+export function count<T>(array: Array<T>, element: T): number {
+  return array.filter(i => i === element).length
+}

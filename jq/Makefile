@@ -1,7 +1,7 @@
 JQ=jq
 INPUT_DIR=input
 SOLUTIONS_DIR=src
-DAY?=2
+DAY?=3
 PART?=1
 
 test:

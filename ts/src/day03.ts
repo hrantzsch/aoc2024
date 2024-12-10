@@ -5,11 +5,5 @@ export function day03_1(input: string): number {
 }
 
 export function day03_2(input: string): number {
-  input = `do()-${input}-don't()`
-  return input
-    .split("don't()")
-    .map(line => line.match(/do\(\).*/)?.[0])
-    .filter(line => line !== undefined)
-    .map(day03_1)
-    .reduce((acc, curr) => acc + curr, 0);
+  return day03_1(input.replace(/\n/g, '').replace(/don't\(\).*?do\(\)/g, ''));
 }

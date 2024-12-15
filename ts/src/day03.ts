@@ -5,5 +5,6 @@ export function day03_1(input: string): number {
 }
 
 export function day03_2(input: string): number {
+  input = input+"do()"
   return day03_1(input.replace(/\n/g, '').replace(/don't\(\).*?do\(\)/g, ''));
 }
